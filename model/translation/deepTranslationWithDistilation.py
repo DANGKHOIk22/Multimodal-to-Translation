@@ -1,7 +1,7 @@
 import math
 import torch
 import torch.nn as nn
-
+import torch.nn.functional as F
 class PositionalEncoding(nn.Module):
     def __init__(self, embedding_dims, dropout=0.1, max_len=5000):
         super(PositionalEncoding, self).__init__()
@@ -20,8 +20,6 @@ class PositionalEncoding(nn.Module):
         x = self.dropout(x)
         return x
 
-import torch.nn as nn
-import torch.nn.functional as F
 
 class TransformerEncoderLayerManual(nn.Module):
     def __init__(self, d_model, nhead, dim_feedforward, dropout):
@@ -54,10 +52,6 @@ class TransformerEncoderLayerManual(nn.Module):
 
         return src
 
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
 class TransformerDecoderLayerManual(nn.Module):
     def __init__(self, d_model, nhead, dim_feedforward, dropout):
