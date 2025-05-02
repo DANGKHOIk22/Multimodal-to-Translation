@@ -66,8 +66,8 @@ Simulates missing segments in the time domain to improve generalization.
 
 #### g) Frequency Mask  
 Simulates frequency dropouts (e.g., due to environmental interference).  
-
 <img src="image/Time mask.png" alt="Time Mask" width="600">
+
 #### h) Log-Mel Spectrogram  
 Transforms linear frequency scale to Mel scale, applies log compression, and normalizes.  
 <img src="image/Mel Log Spectrogram.png" alt="Mel Log Spectrogram" width="600">
