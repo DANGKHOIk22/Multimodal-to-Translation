@@ -62,12 +62,12 @@ Applies STFT and calculates the power spectrum.
 
 #### f) Time Mask  
 Simulates missing segments in the time domain to improve generalization.  
-<img src="image/Time mask.png" alt="Time Mask" width="600">
+<img src="image/Frequency mask.png" alt="Frequency Mask" width="600">
 
 #### g) Frequency Mask  
 Simulates frequency dropouts (e.g., due to environmental interference).  
-<img src="image/Frequency mask.png" alt="Frequency Mask" width="600">
 
+<img src="image/Time mask.png" alt="Time Mask" width="600">
 #### h) Log-Mel Spectrogram  
 Transforms linear frequency scale to Mel scale, applies log compression, and normalizes.  
 <img src="image/Mel Log Spectrogram.png" alt="Mel Log Spectrogram" width="600">
