@@ -28,11 +28,11 @@ This project combines speech and text inputs to build a unified machine translat
   Uses ResNet-34 for audio feature extraction. Outputs are passed through a Transformer-based encoder-decoder.  
   - Encoder trained with **CTC loss**
   - Decoder trained with **Cross-Entropy loss**
-  - Losses: **(1-alpha)*Cross-Entropy + alpha* CTC loss**
+  - Losses: **(1 − α) x Cross-Entropy + α x  CTC loss**
 
 - **DeepTranslationWithDistillation**:  
   Fine-tunes mBART50 as a teacher model and distills it into a custom Transformer Seq2Seq model.  
-  - Losses: **(1-alpha)*Cross-Entropy + alpha* KL Divergence**
+  - Losses: **(1 − α) x Cross-Entropy + α x KL Divergence**
 
 - **DeepTranslationWithGated**:  
   Gated fusion of mBART50 and Transformer encoders/decoders to combine pretrained language knowledge with task-specific modeling.
